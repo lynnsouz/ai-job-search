@@ -16,26 +16,49 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 <!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+## STAR Candidates (Complete Manually)
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+*[Stubs added by `/setup` Path A from CV/reference-letter achievements. Fill in the specifics below before using in an interview - do not improvise these live.]*
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### Security Authentication SDK (Security / Ownership)
+**Source:** CV / 01-candidate-profile.md - Senior iOS Consultant, CGI (Outsource at: AktiaDuetto)
+**What happened:** Implemented a Security Authentication SDK and integrated it across apps.
+**Why it matters:** Good for "tell me about a security-critical feature you built", "describe a time you owned a feature end-to-end", "how do you approach building something integrated across multiple apps/teams"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Native Cashback Feature at Scale (Impact / Reliability)
+**Source:** CV / 01-candidate-profile.md - Senior iOS App Developer, act digital (Outsource at: C6 Bank / JP Morgan)
+**What happened:** Led implementation of a native cashback feature (Swift, UIKit, RESTful APIs), 100% crash-free, serving 30M clients, driving over 1M BRL in redemptions.
+**Why it matters:** Good for "tell me about a feature you shipped that had real business impact", "how do you ensure reliability at scale", "describe a time you led a feature from design to release"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### PIX Payment Feature Under Central Bank Deadlines (Composure Under Pressure)
+**Source:** CV / 01-candidate-profile.md - iOS Engineer, IBM (Outsource at: Santander Bank); also referenced in reference letters
+**What happened:** Built the PIX QR-code payment feature for Santander Enterprise under strict Central Bank of Brazil regulatory deadlines and constraints.
+**Why it matters:** Good for "tell me about a time you delivered under tight deadline or regulatory pressure", "how do you handle constraints imposed from outside the team"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### SwiftUI/MVVM Adoption and CI/CD Automation (Technical Leadership / Efficiency)
+**Source:** CV / 01-candidate-profile.md - iOS Mid-Senior App Developer, Empiricus Research
+**What happened:** Spearheaded SwiftUI adoption using MVVM and RxSwift (Combine), modernizing the codebase, and automated the CI/CD pipeline with Bitrise, improving delivery efficiency by 50%+.
+**Why it matters:** Good for "tell me about a time you drove a technical/architectural change", "describe an improvement you made to your team's process or tooling"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
 
 <!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
 

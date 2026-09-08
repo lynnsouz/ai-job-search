@@ -13,10 +13,12 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 ## Search Sites
 
 Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+- **finn.no/job** - Norway's largest general job board
+- **linkedin.com/jobs** - LinkedIn job listings (filter: Norway / Arendal, and remote); also covered by `linkedin-search` CLI
+- **nav.no** (arbeidsplassen.nav.no) - Norwegian public employment service job listings; also covered by the `nav-search` CLI (mirrors many FINN.no postings too). Use `--location "AGDER"` for the local county.
+- **infojobs.net** - Spain's largest general job board (WebSearch fallback - no CLI installed)
+- **tecnoempleo.com** - Spain-focused IT/tech job board (WebSearch fallback - no CLI installed)
+- Also covered by `freehire-search` CLI (aggregates ~50 ATS platforms, including remote-first fintechs, which can surface Spain-based remote employers too)
 
 Secondary (company career pages via Google):
 - Direct Google searches with `site:` filters for known target companies
@@ -27,34 +29,44 @@ Queries are grouped by priority. Write **each category in every language from yo
 
 **Organize by function, not job title.** The same underlying work carries different titles across companies and markets (a "Data Scientist" role at one employer may be posted as "Insights Analyst" or "Data Consultant" at another). Name each priority category after the function it covers, and list several plausible job titles as query variants within that category rather than betting an entire priority tier on one exact title string.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+### Priority 1: iOS / Mobile Engineering (Mid-Senior / Senior)
 
 These match your strongest and most desired career direction.
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_2]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_COUNTRY]
+site:finn.no "Senior iOS Developer" remote
+site:finn.no "iOS Engineer" Norway
+site:finn.no "Mobile Developer" Swift remote
+site:linkedin.com/jobs "Senior iOS Developer" Norway
+site:linkedin.com/jobs "iOS Engineer" remote
+site:infojobs.net "Desarrollador iOS" remoto
+site:tecnoempleo.com "Desarrollador iOS" teletrabajo
+site:linkedin.com/jobs "Desarrollador iOS Senior" España remoto
 ```
 
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
+### Priority 2: Fintech / Banking Domain
 
-These match your domain expertise.
+These match your domain expertise in banking and payments.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:finn.no fintech iOS developer Norway OR remote
+site:finn.no banking mobile developer Norway
+site:linkedin.com/jobs fintech "iOS Developer" Europe remote
+site:linkedin.com/jobs payments "mobile engineer" remote
+site:infojobs.net fintech "desarrollador iOS" remoto
+site:tecnoempleo.com banca "desarrollador móvil" teletrabajo
+site:linkedin.com/jobs pagos "ingeniero móvil" España remoto
 ```
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
+### Priority 3: Adjacent Mobile / Cross-Platform Roles
 
 Adjacent roles you could pivot into.
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
+site:finn.no "Mobile Engineer" Swift Norway
+site:linkedin.com/jobs "Senior Mobile Developer" Swift remote
+site:infojobs.net "Ingeniero Mobile" Swift remoto
+site:linkedin.com/jobs "Desarrollador Mobile Senior" Swift España remoto
 ```
 
 ### Priority 4: Broader Technical / Consulting
@@ -62,19 +74,21 @@ site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
 Wider net for general technical roles.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:finn.no Swift developer Norway OR remote
+site:linkedin.com/jobs "Swift developer" remote
+site:finn.no "technical consultant" mobile Norway
+site:infojobs.net desarrollador Swift remoto
+site:tecnoempleo.com "consultor técnico" mobile teletrabajo
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+When evaluating results, verify the job location is within reasonable commute distance from your home, or fully remote. Define acceptable areas:
+- Arendal and surrounding areas (Agder region)
+- Fully remote (any location, including Spain-based employers) - preferred
+- On-site roles in Spain (acceptable - open to relocating there)
+- Other Norwegian cities (borderline - only if hybrid/remote-friendly)
+- On-site roles outside Norway and Spain requiring relocation (too far - not seeking relocation)
 
 ## Language Filter
 

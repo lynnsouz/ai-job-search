@@ -77,7 +77,7 @@ For BasicTeX/MacTeX, make sure the TeX binary directory is on `PATH` first (for 
 Quick smoke tests after setup:
 
 ```bash
-cd cv && lualatex -interaction=nonstopmode -halt-on-error main_example.tex && cd ..
+cd cv && lualatex -interaction=nonstopmode -halt-on-error cv_example.tex && cd ..
 
 SMOKE_DIR="$(mktemp -d /tmp/ai-job-cover-smoke.XXXXXX)"
 cp -R cover_letters/cover.cls cover_letters/OpenFonts "$SMOKE_DIR/"
@@ -121,7 +121,7 @@ Drop `--admin` if MiKTeX is installed for the current user only. If a package na
 Quick smoke tests after setup (PowerShell):
 
 ```powershell
-Set-Location cv; lualatex -interaction=nonstopmode -halt-on-error main_example.tex; Set-Location ..
+Set-Location cv; lualatex -interaction=nonstopmode -halt-on-error cv_example.tex; Set-Location ..
 
 $SmokeDir = New-Item -ItemType Directory -Path (Join-Path $env:TEMP "ai-job-cover-smoke-$(Get-Random)")
 Copy-Item cover_letters\cover.cls, cover_letters\OpenFonts -Destination $SmokeDir -Recurse
@@ -227,7 +227,7 @@ All three paths produce the same result: fully populated profile files.
 | `04-job-evaluation.md` | Personalized skill match areas and career goals |
 | `05-cv-templates.md` | Profile statement templates for your background |
 | `07-interview-prep.md` | STAR examples from your experience |
-| `cv/main_example.tex` | Your LaTeX CV with actual details |
+| `cv/cv_example.tex` | Your LaTeX CV with actual details |
 | `search-queries.md` | Job search queries for `/scrape` |
 
 ### Re-running setup
@@ -282,13 +282,13 @@ After `/apply` creates the LaTeX files:
 
 ```bash
 # Bash / zsh / Git Bash
-cd cv && lualatex main_<company>_<role>.tex && cd ..
+cd cv && lualatex cv_<company>_<role>.tex && cd ..
 cd cover_letters && xelatex cover_<company>_<role>.tex && cd ..
 ```
 
 ```powershell
 # PowerShell
-Set-Location cv; lualatex main_<company>_<role>.tex; Set-Location ..
+Set-Location cv; lualatex cv_<company>_<role>.tex; Set-Location ..
 Set-Location cover_letters; xelatex cover_<company>_<role>.tex; Set-Location ..
 ```
 

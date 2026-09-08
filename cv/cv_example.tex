@@ -1,9 +1,9 @@
-%% Example CV - [YOUR_NAME]
+%% Example CV - Lynneker Souza
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
 %% SETUP: Run /setup to populate this with your actual information.
-%% Compile with: lualatex main_example.tex
+%% Compile with: lualatex cv_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
 \documentclass[11pt,a4paper,sans]{moderncv}
@@ -33,7 +33,7 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Lynneker Souza - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -43,13 +43,13 @@
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
+\name{Lynneker}{Souza}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\address{Arendal, Norway}{}{}
+\phone[mobile]{+358 44 246 9186}
+\email{lynnsouz@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/lynnsouz/}{LinkedIn}, \href{https://github.com/lynnsouz}{GitHub}}
 
 \begin{document}
 
@@ -60,7 +60,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Senior iOS Developer with over 8 years of experience building secure, high-performance mobile applications for banking and fintech, including C6 Bank, Santander, and Empiricus. Combines deep expertise in Swift, SwiftUI, and Clean Swift architecture with a strong track record of leading feature delivery, mentoring peers through code review, and shipping accessible, user-centric experiences for tens of millions of users.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -70,15 +70,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{iOS Development}: Swift, SwiftUI, Objective-C, UIKit, Clean Swift Architecture, MVVM, RxSwift/Combine
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{App Foundations}: CoreData, SwiftData, SPM, RESTful APIs, XCTest, UI Testing, Accessibility
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{CI/CD \& Tooling}: Bitrise, Jenkins, FastLane, Git, Cocoapods, Carthage, AI-assisted development with GitHub Copilot
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Banking \& Fintech Domain}: Payments (PIX, cashback, credit cards), security/authentication SDKs, regulatory-constrained delivery
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Collaboration}: Cross-functional delivery with Product, Design, and Backend; code-review mentoring
 
 \end{itemize}
 
@@ -91,31 +91,39 @@
 \begin{itemize}
 
 % --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{Jul 2025-Mar 2026}{Senior iOS Consultant}{CGI (Outsource at: AktiaDuetto)}{Finland, Remote}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1 - be specific, use numbers where possible]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-    \item {[Achievement or responsibility 4]}
+    \item {Implemented a Security Authentication SDK and integrated it across apps}
+    \item {Owned feature maintenance and updates, collaborating closely with Product Managers and Designers}
+    \item {Introduced AI-assisted development tooling (including GitHub Copilot), improving development process efficiency by 25\%}
 \end{itemize}}}
 
 \vspace{3pt}
 
 % --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{Jun 2022-Jun 2024}{Senior iOS App Developer}{act digital (Outsource at: C6 Bank / JP Morgan)}{Helsinki, remote}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
+    \item {Led implementation of a native cashback feature using Swift, UIKit, and RESTful APIs; 100\% crash-free, serving 30M clients}
+    \item {Improved accessibility of home-balance display cards, supporting adjustable font-size preferences}
+    \item {Collaborated cross-functionally with backend, QA, and design; maintained 94\% code coverage; 20+ code reviews per month; 48+ App Store releases}
 \end{itemize}}}
 
 \vspace{3pt}
 
 % --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{Mar 2021-Jun 2022}{iOS Mid-Senior App Developer}{Empiricus Research}{Remote, São Paulo}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
+    \item {Led SwiftUI adoption using MVVM and RxSwift (Combine), modernizing the codebase}
+    \item {Built and automated the CI/CD pipeline with Bitrise, improving delivery efficiency by 50\%+}
+\end{itemize}}}
+
+\vspace{3pt}
+
+% --- Earlier Role ---
+\item{\cventry{Jul 2020-Mar 2021}{iOS Engineer}{IBM (Outsource at: Santander Bank)}{São Paulo, remote}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Designed and implemented key features for the Santander Way credit card app (65M active clients) using Clean Swift architecture}
+    \item {Built the PIX QR-code payment feature for Santander Enterprise, enabling instant transfers}
 \end{itemize}}}
 
 \end{itemize}
@@ -128,14 +136,14 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
+\item{\cventry{2013-2018}{Bachelor's Degree in Computer Science}{Universidade Católica de Brasília (UCB)}{Brasília, Brazil}{}{\vspace{1pt}
+Included a placement in the Apple Developer Academy, building applications and a cognitive-computing prototype integrating IBM Watson.
 }}
 
 \vspace{3pt}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
+\item{\cventry{Jan 2025-Dec 2025}{Swedish Language Education}{Akan Borgå Folkakademi}{Borgå, Finland}{}{\vspace{1pt}
+Swedish language studies.
 }}
 
 \end{itemize}
@@ -147,7 +155,7 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item {[Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).}
+\item {Portuguese (native), English (native or bilingual), Spanish (independent), Swedish (elementary), German (elementary), Norwegian (basic), Finnish (elementary).}
 \end{itemize}
 
 % ============================================================
@@ -157,7 +165,7 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Publications}
 \vspace{1pt}
 \begin{itemize}
-\item {[Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}}
+\item {Lynneker Souza. UCB-Bot: Um Exemplo de Aplicação de Computação Cognitiva. Apple Developer Academy / Universidade Católica de Brasília. [Year and venue not yet confirmed]}
 \end{itemize}
 
 % ============================================================
@@ -167,7 +175,7 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Honors and Awards}
 \vspace{1pt}
 \begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item{\textbf{Best Pitch and Product (Go'oat)} -- Startup Sauna Dawn Batch, Aaltoes / Aalto University (2025).}
 \end{itemize}
 
 % ============================================================

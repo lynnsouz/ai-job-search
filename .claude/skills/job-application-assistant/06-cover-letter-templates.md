@@ -123,6 +123,14 @@ The font wrapper is mandatory — if you just move `\begin{itemize}` outside `\l
 | `\closing{text}` | Closing line |
 | `\signature{name}` | Printed name below signature |
 
+## Proven Opening Formula
+
+*[Extracted by `/setup` Path A from 4+ archived cover letters (DKB Code Factory, Qonto, Proton, Norsk Tipping) - a genuinely repeated pattern, not a one-off]*
+
+> "I am writing to apply for the [Role] at [Company]. Over eight years I have built native Swift applications for banking and fintech clients, most recently as a Senior iOS Consultant at CGI, where I implemented and integrated a Security Authentication SDK across a banking client's app suite."
+
+Use this as the default opening-paragraph bridge for banking/fintech-adjacent roles: it states the role, then immediately anchors credibility with tenure + the most security/fintech-relevant recent achievement. Adjust the trailing clause to whichever achievement is most relevant to the specific posting when the role isn't banking-specific.
+
 ## Tailoring Guidelines
 
 ### Salutation

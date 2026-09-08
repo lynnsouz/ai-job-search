@@ -60,9 +60,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Swift, SwiftUI, Objective-C, iOS/macOS development, Clean Swift Architecture, MVVM, RxSwift/Combine, RESTful APIs, XCTest/UI Testing, CI/CD (Bitrise, Fastlane, GitHub Actions, Jenkins)
+**Moderate match areas:** CoreData/SwiftData, SPM, Accessibility engineering, AWS, security/authentication SDK design, AI-assisted development tooling (GitHub Copilot)
+**Weak match areas:** Android/Kotlin, backend/server-side development, cross-platform frameworks (Flutter, React Native), web frontend
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +74,9 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Banking & fintech mobile applications (payments, cashback, PIX, credit cards, security/authentication SDKs), consultancy/outsource placements at large financial institutions (C6 Bank, Santander, Aktia)
+**Moderate:** General consumer/investment mobile apps (Empiricus Research), enterprise/chatbot integrations (everis, Unilever), robotics/education volunteering
+**Entry-level:** Formal engineering-management or team-lead titles (demonstrated mentoring and code-review leadership without yet holding a Lead/EM title)
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -107,19 +107,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Grow toward technical leadership (Tech Lead / Engineering Manager) - deliberately building toward this: took the ArcticStartup volunteer role specifically for management/leadership experience, has already applied to an EM role (Vipps MobilePay), and mentoring/code-review leadership is a recurring theme across three independent reference letters (Empiricus, C6 Bank, Santander/NAVA)
+- Keep deepening fintech/banking domain expertise as a strong alternative to the management track - PIX, cashback, and security-SDK work at major banks is a genuinely differentiated specialty worth continuing to build on as a senior/staff IC
+- Land something soon, prioritizing a good remote-first fit over a perfect one - currently unemployed and moving fast on the job search, so weigh time-to-hire more heavily than usual when comparing otherwise-similar opportunities
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: Developing a new feature with clear, well-defined requirements, owned and delivered end-to-end
+- Tasks that drain: Planning sessions and periodic status-sync meetings
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Currently unemployed and actively looking to start a new role as soon as possible - weigh time-to-hire and process speed as a real factor, not just fit quality. A strong-fit role with a slow, uncertain process is a real trade-off against a good-fit role that can close faster.
+- **Flexibility**: Strong preference for remote roles; based in Arendal, Norway, holds a working visa for Norway (not citizen/PR - see Eligibility Gate)
+- **Professional development**: Building management and technical-leadership skills toward a team lead / engineering manager track
 
 ### 6. Salary Benchmark (Optional)
 
@@ -230,6 +230,16 @@ starting point instead of searching from scratch - still subject to the final-cl
 verification rule above. If it is missing or stale, research per the checklist as usual,
 then write (or overwrite) the file with fresh findings and today's date, so the next
 consumer benefits.
+
+## Calibration from Past Applications
+
+*[Populated by `/setup` Path A from `documents/applications/*/outcome.md` - update as more applications resolve]*
+
+As of 2026-09-07, 3 applications have reached a real final outcome from an actually-submitted application: Accenture España (iOS Developer, A Coruña, Spain), DKB Code Factory (iOS Engineer, Business Banking, Spain), and Handelsbanken (Developer, New Mobile Bank, Norway, applied outside the `/apply` workflow) - all three rejected before any interview stage, all with generic/boilerplate rejection language naming no specific gap. The geographic spread is now more varied than it looked at n=2 (no longer Spain-only), so a Spain-specific pattern looks less likely, though n=3 is still thin. (Six other tracker rows - A1, BairesDev, CMV Consultores, Grupo TECDATA, Linkup ST, Metric AS - are marked `no_response` by convention but were never actually submitted, drafted then withdrawn for various reasons; they carry no fit signal.)
+
+**One positive signal worth noting:** Out of the Box Systems (iOS Developer, Swift/UIKit, fully remote 2-year B2B contract, generalist consultancy) reached a phone screen (2026-09-07) - the first application to progress past submission. This is the "outsourced-contractor engagement pattern" framing (matches CGI/act digital/IBM consultancy placements) working as intended; worth watching whether this pattern repeats with more interview invitations.
+
+**Still not yet a pattern worth reweighting** - n=3 rejections is too thin to conclude anything definitive about sector or seniority level. Flagging honestly as "insufficient data yet, watch for a repeat" rather than adjusting weights. Re-run `/setup` again once more outcomes resolve, especially if a specific role type or sector repeats a no-interview result, or if Out of the Box Systems progresses further.
 
 ## Weighting
 - Technical Skills: 30%

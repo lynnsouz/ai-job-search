@@ -23,7 +23,7 @@ SKILL_DIR = REPO / ".claude" / "skills" / "job-application-assistant"
 CV_TEMPLATES = SKILL_DIR / "05-cv-templates.md"
 COVER_TEMPLATES = SKILL_DIR / "06-cover-letter-templates.md"
 APPLY = REPO / ".claude" / "commands" / "apply.md"
-EXAMPLE_CV = REPO / "cv" / "main_example.tex"
+EXAMPLE_CV = REPO / "cv" / "cv_example.tex"
 EXAMPLE_COVER = REPO / "cover_letters" / "cover_example.tex"
 
 # \item whose body starts with [ - with or without whitespace between.

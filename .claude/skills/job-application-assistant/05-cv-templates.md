@@ -10,17 +10,17 @@ framework_version: 1.4.3
 
 All CVs use the moderncv LaTeX package with the "banking" style and "blue" color scheme.
 
-**Output file:** `cv/main_<company>_<role>.tex`
+**Output file:** `cv/cv_<company>_<role>.tex`
 **Compile with:** **lualatex** on MiKTeX/TeX Live. pdflatex often fails on modern MiKTeX installs with `fontawesome5` font-expansion errors; lualatex handles the same sources cleanly.
-**Master reference:** `cv/main_example.tex` (comprehensive CV with all competencies, experience, and achievements - use as source when building targeted CVs)
+**Master reference:** `cv/cv_example.tex` (comprehensive CV with all competencies, experience, and achievements - use as source when building targeted CVs)
 
 ### Compile command
 
 ```bash
-cd cv && lualatex -interaction=nonstopmode main_<company>_<role>.tex
+cd cv && lualatex -interaction=nonstopmode cv_<company>_<role>.tex
 ```
 
-Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. Any page count other than 2 is a failure that must be fixed before presenting to the user.
+Expected output: `Output written on cv_<company>_<role>.pdf (2 pages, ...)`. Any page count other than 2 is a failure that must be fixed before presenting to the user.
 
 ## Document Structure
 
@@ -129,12 +129,11 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 
 **Create 2-3 profile statement templates for your main role types:**
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For banking/fintech iOS roles:** *[Used for: dkb_code_factory_ios_engineer_business_banking]*
+> Senior iOS Developer with over 8 years of professional experience building and shipping native Swift applications for banking and fintech products, including C6 Bank (30M clients) and Santander (65M clients). Deep expertise in Swift, SwiftUI, and modular architecture (Clean Swift, MVVM), with direct experience designing security-critical features, including a Security Authentication SDK built and integrated across apps at CGI/AktiaDuetto. Strong testing discipline (94% code coverage via XCTest and UI Testing) and a recurring reputation for mentoring peers and raising codebase quality through code review, well suited to building a new mobile-first banking product from the ground up.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For security/privacy-focused iOS roles:** *[Used for: proton_senior_ios_engineer]*
+> Senior iOS Developer with over 8 years of professional experience designing, developing, and maintaining high-performance native Swift applications, including a Security Authentication SDK built and integrated across a banking client's app suite and a GDPR/LGPD consent feature governing user data-sharing permissions. Strong track record building maintainable, testable mobile architectures (Clean Swift, MVVM) and collaborating across large, multi-team codebases. Recurring reputation for mentoring peers and raising codebase quality through code review, built across international, security-conscious consultancy placements.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 
@@ -236,7 +235,7 @@ Related trap: a bullet whose text begins with a literal `[` must be braced - `\i
 
 After writing the CV and before presenting to the user, always compile and visually inspect the PDF. Iterate until the layout is clean. Workflow:
 
-1. Run `lualatex -interaction=nonstopmode main_<company>_<role>.tex`
+1. Run `lualatex -interaction=nonstopmode cv_<company>_<role>.tex`
 2. Check the output page count: must be exactly 2
 3. Read the PDF via the Read tool and visually inspect both pages
 4. Check for **orphaned entries**: a `\cventry` title line must never sit alone at the bottom of page 1 with its bullets on page 2
@@ -254,7 +253,7 @@ Include `\usepackage{needspace}` in the preamble.
 **Caveat - use `\needspace` before entries, never before `\section` headings.** A section-level `\needspace` pushes the entire section (heading plus content) to the next page whenever the request does not fit, stranding empty space above and typically *adding* a page instead of saving one. Apply it only to the individual `\cventry` that actually orphans, and only after a compile shows the orphan.
 
 **Problem: one trailing section spills to page 3 (e.g., References alone on page 3)**
-Add `\enlargethispage{2-3\baselineskip}` before a late section (e.g., before `\section{Honors and Awards}`) to stretch page 2 by a few lines. This is the standard LaTeX rescue for near-miss overflows.
+Add `\enlargethispage{3\baselineskip}` before a late section (e.g., before `\section{Honors and Awards}`) to stretch page 2 by a few lines. This is the standard LaTeX rescue for near-miss overflows. (`2-3\baselineskip` is not a legal LaTeX dimension — it compiles but prints a literal stray "-3" onto the page. Use a single value.)
 
 **Problem: 3 pages with significant content on page 3**
 Cut content — do not compress geometry or `\vspace`. See "Relevance-weighted cutting" below for the rule.
@@ -267,7 +266,7 @@ Restore the highest-relevance item that was previously cut — a CV that ends mi
 Most employers run CVs through an ATS before a human sees them, and the ATS reads the PDF's embedded **text layer**, not the rendered page. A CV can pass visual inspection and still extract as garbage. After the layout passes the compile-and-inspect loop, verify the text layer:
 
 ```bash
-python tools/verify_pdf.py cv/main_<company>_<role>.pdf --dump-text cv/main_<company>_<role>.txt
+python tools/verify_pdf.py cv/cv_<company>_<role>.pdf --dump-text cv/cv_<company>_<role>.txt
 ```
 
 Extraction tries **pypdf** first (`pip install pypdf`, BSD license), then Poppler `pdftotext`. If a fallback still uses `pdftotext -layout`, it must also pass `-enc UTF-8`: Xpdf-based builds default to Latin-1, which makes every non-ASCII character in a perfectly good CV read back as a replacement character. If neither extractor is available, skip the mechanical check with a warning and rely on the visual PDF read for keyword coverage.
@@ -347,7 +346,7 @@ Cut the lowest-total-score line first, regardless of which section it sits in.
 
 - Do not mechanically cut from the bottom of a static section list without checking relevance. "Cut the oldest role first" is wrong if that role is literally about the skill the posting asks for.
 - Do not cut the one concrete example the cover letter leans on. Relevance is measured against the cover letter you wrote, not just the job posting — interviewers will have read both.
-- Do not cut to fit if the fit is borderline (2.02 pages). Prefer `\enlargethispage{2-3\baselineskip}` on a late section for near-misses; reserve content cuts for genuine overflow (content on page 3 that is more than a single trailing section).
+- Do not cut to fit if the fit is borderline (2.02 pages). Prefer `\enlargethispage{3\baselineskip}` on a late section for near-misses; reserve content cuts for genuine overflow (content on page 3 that is more than a single trailing section).
 
 ## Recommended Section Order
 
