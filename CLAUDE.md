@@ -17,7 +17,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ### Identity
 - **Name:** Lynneker Souza
-- **Location:** Arendal, Norway (local to Arendal + remote; open to relocating to Spain, otherwise not seeking relocation)
+- **Location:** Arendal, Norway (local to Arendal + remote. Remote preferred; Oslo hybrid acceptable at up to 3 office days/week, travelling from Arendal. **Open to relocating to Helsinki, Finland** (Helsinki metro area) and to Finland-based remote roles - added 2026-09-24; **Open to Brazil-based remote roles** (fully remote, working from Norway - added 2026-10-22; will not move back to Brazil); relocation anywhere else is still a no)
 - **Languages:**
   | Language | Level |
   |----------|-------|
@@ -36,7 +36,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - **CV language:** English
 
 - **Status:** Job-seeking, currently unemployed - actively looking to start a new role as soon as possible
-- **Work Authorization:** Holds a working visa for Norway (not a Norwegian citizen or permanent resident) - run the Eligibility Gate in `04-job-evaluation.md` for any Norway-based posting
+- **Work Authorization:** **No current Norwegian work permit** - Family Ties (familiegjenforening) residence permit applied for, decision pending and expected soon; it will grant the right to work once approved (updated 2026-10-16; not a Norwegian citizen or permanent resident). If a job offer comes first, Lynneker plans to apply for a skilled worker visa, with the result expected in about 2-3 weeks (candidate's estimate, stated 2026-11-06). Until a permit is granted, never claim a current Norwegian work right in a CV, cover letter or form - say the permit is pending - and run the Eligibility Gate in `04-job-evaluation.md` for any Norway-based posting. No current Finnish right to work - would need employer sponsorship / a work-based Finnish residence permit (confirmed by user 2026-09-24); run the Eligibility Gate for Helsinki/Finland-based postings and flag any that require an existing Finnish work right or no-sponsorship
 - **LinkedIn headline:** "Experienced iOS Developer | Innovation Advocate"
 
 ### Education
@@ -49,12 +49,12 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 .claude/skills/job-application-assistant/01-candidate-profile.md - this is a condensed view. -->
 - **Production Assistant** (Apr 2026 - Jul 2026) - **ArcticStartup** (Helsinki, Finland)
   - Non-technical, volunteer role; taken deliberately to build management and leadership experience outside of core iOS development work; consider omitting from tech-focused tailored CVs
-- **Senior iOS Consultant** (Jul 2025 - Mar 2026) - **CGI** (Outsource at: AktiaDuetto) (Finland, Remote)
-  - Implemented a Security Authentication SDK, integrated across apps
+- **Senior Consultant** (Aug 18, 2025 - Feb 11, 2026) - **CGI** (Outsource at: AktiaDuetto) (Finland, Remote)
+  - Led the iOS integration of a third-party Security Authentication SDK across apps
   - Owned feature maintenance and updates, collaborating with Product Managers and Designers
   - Introduced AI-assisted development tooling (GitHub Copilot), improving dev process efficiency by 25%
   - Used GitHub Actions for CI/CD on the Aktia project
-- **Senior iOS App Developer** (Jun 2022 - Jun 2024) - **act digital** (Outsource at: C6 Bank / JP Morgan) (Helsinki, remote)
+- **Senior iOS App Developer** (Jun 2022 - Jun 2024) - **act digital** (Outsource at: C6 Bank / JP Morgan) (Brazil, remote)
   - Led native cashback feature (Swift, UIKit, RESTful APIs), 100% crash-free, 30M clients, >1M BRL redeemed
   - Improved accessibility of balance-display cards (adjustable font sizes)
   - Maintained 94% code coverage; 20+ code reviews/month; 48+ App Store releases
@@ -97,12 +97,14 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 <!-- Industries and companies you're targeting -->
 - Fintech / Banking: (e.g. Aktia, C6 Bank-style digital banks, Wise/TransferWise-style fintechs)
 - Open to other sectors - domain matters less than remote-first setup and team/culture fit
+- Brazilian companies hiring fully remote (added 2026-10-22) - e.g. Brazilian banks, fintechs and product companies that accept a PJ/contractor or international-payroll arrangement from abroad
 
 ### Deal-breakers
 <!-- Hard constraints on job search. Language requirements are handled separately and
 automatically from your Languages table above - don't duplicate them here. -->
-- No relocation, with one exception: open to relocating to Spain
-- No other hard deal-breakers specified; strong preference for remote-first roles
+- No relocation, except to Helsinki, Finland (added 2026-09-24) - remote preferred; Oslo hybrid at up to 3 office days/week is also acceptable
+- No fullstack, React Native, or similar cross-platform/web-stack roles (Flutter, React/Next.js web, "mobile app/fullstack") - native iOS only; native dual-platform (Swift + Kotlin) is acceptable (added 2026-09-23)
+- Strong preference for remote-first roles; Oslo hybrid with at most 3 office days/week is acceptable, travelling from Arendal (added 2026-09-23); Helsinki-based roles (remote, hybrid or on-site, relocating to Helsinki) and fully remote Finland-based roles are acceptable (added 2026-09-24); fully remote Brazil-based roles are acceptable while living in Norway, but any Brazil on-site/hybrid role or one requiring Brazilian residence is a no (added 2026-10-22)
 
 <!-- Salary baseline: ~EUR 5000/month for 37.5h/week (from most recent role at Aktia, Finland) -->
 
@@ -115,7 +117,7 @@ automatically from your Languages table above - don't duplicate them here. -->
 ## Workflow for New Job Applications
 1. User provides a job posting (URL or text)
 2. **Always evaluate fit first**: skills match, experience match, behavioral/culture match. Present this assessment to the user before proceeding.
-3. If good fit: create targeted CV (`cv/cv_<company>_<role>.tex`) and cover letter (`cover_letters/cover_<company>_<role>.tex`)
+3. If good fit: create targeted CV (`cv/CV_Lynneker_Souza_<role>_<company>.tex`) and cover letter (`cover_letters/CL_Lynneker_Souza_<role>_<company>.tex`)
 4. **Verify both documents** (see Verification Checklist below)
 5. Prepare interview talking points based on the role requirements and your strengths
 
@@ -159,7 +161,7 @@ Both documents MUST be compiled and visually inspected via the Read tool on the 
 - [ ] **Cover letter bullet font matches body font** - `\lettercontent{}` must not wrap `\begin{itemize}...\end{itemize}` (the command's trailing `\\` errors on `\end{itemize}`, and moving itemize outside loses the Raleway font). Standard pattern: close `\lettercontent{}`, then wrap the list in `{\raggedright\fontspec[Path = OpenFonts/fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont \begin{itemize}...\end{itemize}\par}`
 
 ### ATS & keyword verification (CV)
-ATS parsers read the PDF's embedded text layer, not the rendered page. Extract it with `python tools/verify_pdf.py cv/cv_<company>_<role>.pdf --dump-text cv/cv_<company>_<role>.txt` (pypdf, then `pdftotext -layout -enc UTF-8`) and verify what a parser sees. If both extractors are missing, skip the parseability items with a warning and check keyword coverage from the visual PDF read instead.
+ATS parsers read the PDF's embedded text layer, not the rendered page. Extract it with `python tools/verify_pdf.py cv/CV_Lynneker_Souza_<role>_<company>.pdf --dump-text cv/CV_Lynneker_Souza_<role>_<company>.txt` (pypdf, then `pdftotext -layout -enc UTF-8`) and verify what a parser sees. If both extractors are missing, skip the parseability items with a warning and check keyword coverage from the visual PDF read instead.
 - [ ] CV text layer extracts cleanly - no `(cid:*)` markers, `�` replacement characters, or text visible in the PDF but absent from the extraction
 - [ ] Email and phone appear as **literal text** in the extraction (icon-glyph noise like `MOBILE-ALT`/`Envelope` is harmless, but a contact detail carried only by an icon or hyperlink is invisible to ATS)
 - [ ] Reading order of the extracted text matches the visual order (single-column stock template is safe; multi-column custom templates are where this breaks)

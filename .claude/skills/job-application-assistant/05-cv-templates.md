@@ -10,17 +10,17 @@ framework_version: 1.4.3
 
 All CVs use the moderncv LaTeX package with the "banking" style and "blue" color scheme.
 
-**Output file:** `cv/cv_<company>_<role>.tex`
+**Output file:** `cv/CV_Lynneker_Souza_<role>_<company>.tex`
 **Compile with:** **lualatex** on MiKTeX/TeX Live. pdflatex often fails on modern MiKTeX installs with `fontawesome5` font-expansion errors; lualatex handles the same sources cleanly.
 **Master reference:** `cv/cv_example.tex` (comprehensive CV with all competencies, experience, and achievements - use as source when building targeted CVs)
 
 ### Compile command
 
 ```bash
-cd cv && lualatex -interaction=nonstopmode cv_<company>_<role>.tex
+cd cv && lualatex -interaction=nonstopmode CV_Lynneker_Souza_<role>_<company>.tex
 ```
 
-Expected output: `Output written on cv_<company>_<role>.pdf (2 pages, ...)`. Any page count other than 2 is a failure that must be fixed before presenting to the user.
+Expected output: `Output written on CV_Lynneker_Souza_<role>_<company>.pdf (2 pages, ...)`. Any page count other than 2 is a failure that must be fixed before presenting to the user.
 
 ## Document Structure
 
@@ -130,10 +130,30 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 **Create 2-3 profile statement templates for your main role types:**
 
 **For banking/fintech iOS roles:** *[Used for: dkb_code_factory_ios_engineer_business_banking]*
-> Senior iOS Developer with over 8 years of professional experience building and shipping native Swift applications for banking and fintech products, including C6 Bank (30M clients) and Santander (65M clients). Deep expertise in Swift, SwiftUI, and modular architecture (Clean Swift, MVVM), with direct experience designing security-critical features, including a Security Authentication SDK built and integrated across apps at CGI/AktiaDuetto. Strong testing discipline (94% code coverage via XCTest and UI Testing) and a recurring reputation for mentoring peers and raising codebase quality through code review, well suited to building a new mobile-first banking product from the ground up.
+> Senior iOS Developer with over 8 years of professional experience building and shipping native Swift applications for banking and fintech products, including C6 Bank (30M clients) and Santander (65M clients). Deep expertise in Swift, SwiftUI, and modular architecture (Clean Swift, MVVM), with direct experience on security-critical features, including leading the iOS integration of a third-party Security Authentication SDK across apps at CGI/AktiaDuetto. Strong testing discipline (94% code coverage via XCTest and UI Testing) and a recurring reputation for mentoring peers and raising codebase quality through code review, well suited to building a new mobile-first banking product from the ground up.
 
 **For security/privacy-focused iOS roles:** *[Used for: proton_senior_ios_engineer]*
-> Senior iOS Developer with over 8 years of professional experience designing, developing, and maintaining high-performance native Swift applications, including a Security Authentication SDK built and integrated across a banking client's app suite and a GDPR/LGPD consent feature governing user data-sharing permissions. Strong track record building maintainable, testable mobile architectures (Clean Swift, MVVM) and collaborating across large, multi-team codebases. Recurring reputation for mentoring peers and raising codebase quality through code review, built across international, security-conscious consultancy placements.
+> Senior iOS Developer with over 8 years of professional experience designing, developing, and maintaining high-performance native Swift applications, including leading the iOS integration of a third-party Security Authentication SDK across a banking client's app suite and a GDPR/LGPD consent feature governing user data-sharing permissions. Strong track record building maintainable, testable mobile architectures (Clean Swift, MVVM) and collaborating across large, multi-team codebases. Recurring reputation for mentoring peers and raising codebase quality through code review, built across international, security-conscious consultancy placements.
+
+**For engineering/technical leadership roles:** *[Used for: vipps_mobilepay_engineering_manager]*
+> Senior iOS Engineer with over 8 years of hands-on mobile delivery in banking and fintech, now transitioning into engineering leadership. Consistently the person teams lean on for code quality and process improvement: owning code review (20+ reviews/month), mentoring peers, and driving delivery process improvements such as CI/CD automation and AI-assisted development adoption. Deep native-mobile domain knowledge across iOS, informed by close collaboration with backend, QA, and design throughout every engagement.
+
+**For accessibility/consumer-scale roles:** *[Used for: speechify_ios_engineer]*
+> Senior iOS Engineer with over 8 years of experience building and shipping production Swift/SwiftUI applications for user bases in the tens of millions. Combines strong CI/CD and release-engineering practice (Bitrise, Fastlane, Git) with a genuine track record in accessibility-focused UI work, having shipped adaptive, font-size-aware interfaces for a banking app's core screens. Comfortable owning a feature end to end, from technical planning to App Store release, in fully distributed remote teams.
+
+**For platform/infrastructure-ownership roles:** *[Used for: amazon_application_builder_ring_application_services]*
+> Senior iOS Developer with over 8 years of professional experience building native Swift applications, including leading the iOS integration of a third-party Security Authentication SDK across multiple apps at CGI/AktiaDuetto - work several apps depend on, not a single feature. Strong testing discipline (94% code coverage via XCTest and UI Testing), CI/CD automation experience (Bitrise, GitHub Actions, Fastlane), and a recurring reputation for mentoring peers and raising codebase quality through code review, well suited to owning a platform or shared-services component that other engineering teams depend on.
+
+**For native dual-platform (Swift + Kotlin) roles:** *[Used for: mode_mobile_sr_mobile_engineer_upcoming_apps]*
+> Senior native mobile engineer (iOS) with over 8 years of experience shipping consumer apps to millions of users in fully remote teams, including a 100% crash-free cashback feature serving 30M clients at C6 Bank. Hands-on production experience with Swift, SwiftUI and UIKit, Swift Concurrency (async/await), Combine, CoreData, and XCTest/XCUITest. Used to taking ownership of existing production codebases, with 48+ App Store releases and 94% code coverage. Android is the growth side of the profile: production experience is native iOS - state this plainly rather than implying Kotlin experience.
+
+**For product-company roles adding a new area to a shared app:** *[Used for: vend_app_developer_finn_travel]*
+> Senior iOS Developer with over 8 years of professional experience building native Swift and SwiftUI apps used by tens of millions of people, including C6 Bank (30M clients) and the Santander Way credit card app (65M active clients). Has set up the foundations other developers build on: led SwiftUI adoption with MVVM and Combine at Empiricus Research, built its Bitrise CI/CD pipeline (50%+ delivery efficiency gain), and introduced GitHub Copilot at CGI/AktiaDuetto (25% process efficiency gain). Works inside large shared codebases with SPM, async/await and REST APIs, and owns features from architecture through App Store release.
+
+**For primary-iOS-developer roles at smaller product companies:** *[Used for: propely_senior_ios_developer; adjusted 2026-11-06 from "owning a codebase's architecture" and "built and integrated" to match the profile. Propely's rejection named this letter's banking apps, SwiftUI and architecture/release points as interesting.]*
+> Senior iOS Developer with over 8 years of experience building native Swift apps in production, including C6 Bank (30M clients) and the Santander Way credit card app (65M active clients). Led SwiftUI adoption with MVVM and Combine at Empiricus Research and uses Swift Concurrency (async/await) in production, most recently integrating a third-party Security Authentication SDK across apps at CGI/AktiaDuetto. Comfortable owning a feature's architecture, quality and release path: 94% code coverage, 48+ App Store releases, CI/CD pipelines built with Bitrise and GitHub Actions, and a 100% crash-free feature at scale. Regularly the person who mentors peers and raises code quality through review, which is the groundwork a future mobile team needs.
+
+**Backtrack check for ownership claims:** in the Fartskriver screen the candidate said "I never had the whole application… one module". Claim ownership of features end to end, not of whole apps or codebases, unless a specific role supports it.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 
@@ -235,7 +255,7 @@ Related trap: a bullet whose text begins with a literal `[` must be braced - `\i
 
 After writing the CV and before presenting to the user, always compile and visually inspect the PDF. Iterate until the layout is clean. Workflow:
 
-1. Run `lualatex -interaction=nonstopmode cv_<company>_<role>.tex`
+1. Run `lualatex -interaction=nonstopmode CV_Lynneker_Souza_<role>_<company>.tex`
 2. Check the output page count: must be exactly 2
 3. Read the PDF via the Read tool and visually inspect both pages
 4. Check for **orphaned entries**: a `\cventry` title line must never sit alone at the bottom of page 1 with its bullets on page 2
@@ -266,7 +286,7 @@ Restore the highest-relevance item that was previously cut — a CV that ends mi
 Most employers run CVs through an ATS before a human sees them, and the ATS reads the PDF's embedded **text layer**, not the rendered page. A CV can pass visual inspection and still extract as garbage. After the layout passes the compile-and-inspect loop, verify the text layer:
 
 ```bash
-python tools/verify_pdf.py cv/cv_<company>_<role>.pdf --dump-text cv/cv_<company>_<role>.txt
+python tools/verify_pdf.py cv/CV_Lynneker_Souza_<role>_<company>.pdf --dump-text cv/CV_Lynneker_Souza_<role>_<company>.txt
 ```
 
 Extraction tries **pypdf** first (`pip install pypdf`, BSD license), then Poppler `pdftotext`. If a fallback still uses `pdftotext -layout`, it must also pass `-enc UTF-8`: Xpdf-based builds default to Latin-1, which makes every non-ASCII character in a perfectly good CV read back as a replacement character. If neither extractor is available, skip the mechanical check with a warning and rely on the visual PDF read for keyword coverage.

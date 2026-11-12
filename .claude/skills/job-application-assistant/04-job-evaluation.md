@@ -61,7 +61,7 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 0-39 | Fundamental mismatch |
 
 **Strong match areas:** Swift, SwiftUI, Objective-C, iOS/macOS development, Clean Swift Architecture, MVVM, RxSwift/Combine, RESTful APIs, XCTest/UI Testing, CI/CD (Bitrise, Fastlane, GitHub Actions, Jenkins)
-**Moderate match areas:** CoreData/SwiftData, SPM, Accessibility engineering, AWS, security/authentication SDK design, AI-assisted development tooling (GitHub Copilot)
+**Moderate match areas:** CoreData/SwiftData, SPM, Accessibility engineering, AWS, security/authentication SDK integration, AI-assisted development tooling (GitHub Copilot)
 **Weak match areas:** Android/Kotlin, backend/server-side development, cross-platform frameworks (Flutter, React Native), web frontend
 
 ### 2. Experience Match (0-100)
@@ -93,7 +93,12 @@ Does the role and company culture match the behavioral profile?
 ### 4. Location & Logistics (Pass/Fail + Notes)
 - Within commute range: PASS
 - Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
+- Requires relocation to Helsinki, Finland (Helsinki metro area incl. Espoo/Vantaa): PASS (candidate is open to relocating to Helsinki, added 2026-09-24) - note it, and run the Eligibility Gate since Finnish work authorization is unconfirmed
+- Fully remote Finland-based role: PASS (flag Finnish work authorization as unverified)
+- Fully remote Brazil-based role that allows working from abroad (explicit "remoto de qualquer lugar", "work from anywhere", international/PJ contractor accepted): PASS (added 2026-10-22). Candidate is a Brazilian citizen, so Brazilian work rights are not an issue; note the time zone (Brazil UTC-3 vs Norway UTC+1/+2, 4-5 hours) and whether the contract is PJ/contractor
+- Brazil-based "100% remoto" that does not say whether working from abroad is allowed: FLAG - many require a Brazilian address (CLT payroll, equipment shipping, occasional "encontros presenciais"); confirm with the recruiter before applying, per the unresolved-gates calibration below
+- Brazil-based role that is hybrid/on-site, requires Brazilian residence, or requires periodic in-person presence in Brazil: FAIL (will not move back to Brazil)
+- Requires relocation anywhere else, including other Finnish cities (Tampere, Turku, Oulu...): FAIL (deal-breaker)
 - Frequent international travel: FLAG (discuss with user)
 
 ### 5. Career Alignment & Motivation (0-100)
@@ -118,7 +123,7 @@ Does this role advance career goals and contain tasks that energize?
 
 **Life situation alignment:** Consider personal constraints:
 - **Security**: Currently unemployed and actively looking to start a new role as soon as possible - weigh time-to-hire and process speed as a real factor, not just fit quality. A strong-fit role with a slow, uncertain process is a real trade-off against a good-fit role that can close faster.
-- **Flexibility**: Strong preference for remote roles; based in Arendal, Norway, holds a working visa for Norway (not citizen/PR - see Eligibility Gate)
+- **Flexibility**: Strong preference for remote roles; Oslo hybrid acceptable at up to 3 office days/week (travelling from Arendal, added 2026-09-23); open to relocating to Helsinki, Finland and to Finland-based remote roles (added 2026-09-24); open to fully remote Brazil-based roles from Norway, no move back to Brazil (added 2026-10-22); based in Arendal, Norway, no current Norwegian work permit, Family Ties permit pending (not citizen/PR - see Eligibility Gate), with a skilled worker visa application planned if a job offer comes first (result in about 2-3 weeks, candidate's estimate, 2026-11-06); Finnish work authorization unconfirmed
 - **Professional development**: Building management and technical-leadership skills toward a team lead / engineering manager track
 
 ### 6. Salary Benchmark (Optional)
@@ -235,11 +240,42 @@ consumer benefits.
 
 *[Populated by `/setup` Path A from `documents/applications/*/outcome.md` - update as more applications resolve]*
 
-As of 2026-09-07, 3 applications have reached a real final outcome from an actually-submitted application: Accenture España (iOS Developer, A Coruña, Spain), DKB Code Factory (iOS Engineer, Business Banking, Spain), and Handelsbanken (Developer, New Mobile Bank, Norway, applied outside the `/apply` workflow) - all three rejected before any interview stage, all with generic/boilerplate rejection language naming no specific gap. The geographic spread is now more varied than it looked at n=2 (no longer Spain-only), so a Spain-specific pattern looks less likely, though n=3 is still thin. (Six other tracker rows - A1, BairesDev, CMV Consultores, Grupo TECDATA, Linkup ST, Metric AS - are marked `no_response` by convention but were never actually submitted, drafted then withdrawn for various reasons; they carry no fit signal.)
+As of 2026-09-15, 11 applications have reached a final outcome from an actually-submitted application, all rejected: Accenture España (fit 62.9, no interview), DKB Code Factory (84.85, no interview), Handelsbanken (58.25, no interview, applied outside the `/apply` workflow), Qonto (88, no interview), yttr AS (81, no interview), Out of the Box Systems (72, reached a phone screen 2026-09-07 before rejection), Speechify (78.5, reached a technical/code-challenge stage 2026-09-04 before the role itself was put on hold 2026-09-08 - recorded as rejected since the pipeline is closed), 42Labs (no fit score recorded, no interview, rejected 2026-09-09 with a fully generic email), N26 (fit 85.5, no interview, rejected 2026-09-11 - two days after applying, at screening stage), The New York Times (no interview, rejected 2026-09-13), and Vipps MobilePay (no interview, rejected 2026-09-15). No offers yet. (11 other archived `no_response` outcomes - A1, BairesDev, BJAK, CMV Consultores, Giant Leap, Grupo TECDATA, IT Partner, Linkup ST, Metric AS, Veritran Shared Services Center, Vigna Solutions - were never actually submitted: postings withdrawn, deadlines missed, closed before submission, unresolved eligibility/pay flags, or the candidate withdrew before applying. They carry no fit signal and are excluded from the counts above.)
 
-**One positive signal worth noting:** Out of the Box Systems (iOS Developer, Swift/UIKit, fully remote 2-year B2B contract, generalist consultancy) reached a phone screen (2026-09-07) - the first application to progress past submission. This is the "outsourced-contractor engagement pattern" framing (matches CGI/act digital/IBM consultancy placements) working as intended; worth watching whether this pattern repeats with more interview invitations.
+**A new failure mode: gates flagged before applying, and the application went out anyway.** The New York Times iOS Engineer (rejected 2026-09-13, no interview stages reached, applied 2026-09-08) is a different pattern from the high-fit-score rejections above - here the Location Gate had already failed (hybrid NYC HQ vs. the no-relocation constraint) and US work-authorization eligibility was unverified *before* the application was submitted, not discovered afterward. Worth weighing failed gates more heavily going forward rather than proceeding past them on the strength of other fit dimensions.
 
-**Still not yet a pattern worth reweighting** - n=3 rejections is too thin to conclude anything definitive about sector or seniority level. Flagging honestly as "insufficient data yet, watch for a repeat" rather than adjusting weights. Re-run `/setup` again once more outcomes resolve, especially if a specific role type or sector repeats a no-interview result, or if Out of the Box Systems progresses further.
+**The leadership-track test also failed at screening.** Vipps MobilePay (Engineering Manager, rejected 2026-09-15, no interview stage reached, generic "moved forward with a smaller group of candidates" language) is the one application that directly tested the EM/leadership-track career goal noted above. It failed at the same screening stage as the high-fit banking/fintech IC rejections (Qonto, DKB Code Factory, N26) - a second, distinct data point that high nominal fit isn't converting past screening, this time on the leadership-track axis rather than the IC axis.
+
+**Fit score is not predicting interview progression - now a repeated pattern across three high-scoring banking/fintech rejections.** Qonto (88), DKB Code Factory (84.85), and now N26 (85.5) are the three highest-scored applications on record, all banking/fintech roles with the strongest technical-stack overlap on paper, and all three were rejected with zero interview stage - N26's came at the screening stage just two days after applying, with fully generic language. Meanwhile the two applications that did progress past pure screening, Speechify (78.5, code challenge) and Out of the Box Systems (72, phone screen), sit in the upper-70s/low-70s, not the top of the range. This is the third setup run in a row surfacing the same inverse pattern (the highest-scored banking/fintech applications converting worse than lower-scored ones), and with the top 3 fit scores on record now all zero-interview rejections, it's a real enough signal to flag directly to the user before drafting future 80+-fit banking/fintech applications: a high technical/experience match alone is not converting past initial ATS/recruiter screening for this profile in this sector, and something else (a stronger differentiator, a direct referral, or more distinctive cover-letter framing) may be needed. Re-check again once Solera Holdings, Proton, UST, or Luca TIC (all still `in_progress`) resolve.
+
+**Language Gate validated once.** yttr AS is the first resolved outcome where a FLAG (not FAIL) - Norwegian Basic level against a stated "meget godt norsk" requirement - was confirmed as the actual rejection reason by the recruiter ("B2-C1 Norwegian requirement... invited to re-contact once Norwegian improves"). Worth weighting Norwegian-language FLAGs closer to a soft-fail than previously treated, at least for client-facing on-site roles.
+
+**Still no positive interview-to-offer data.** Out of the Box Systems' phone screen and Speechify's code challenge are the furthest any application has progressed; neither converted further. No pattern yet on what predicts conversion past the first live stage. Re-run `/setup` again once more outcomes resolve.
+
+**Update 2026-09-23 (`/setup` Path A re-run).** Resolved since the last pass: Kaizen Gaming (fit 65, rejected 2026-09-21, templated email, no interview) and Kake (fit 80, no_response 2026-09-19, staffing intermediary, no interview). Never submitted and excluded from fit signal: Arise App (posting closed), Bokio (withdrawn - React Native stack), Bluestorm Recruitment (blocked by the application portal). Progress on an open application: Plum Fintech (fit 77.75) reached a first-round chatbot screening interview on 2026-09-15 - still `in_progress`, no next stage confirmed.
+
+**The 72-79 band keeps converting; 80+ still does not.** Every application that has passed pure screening sits between 72 and 79 (Out of the Box Systems 72, Plum Fintech 77.75, Speechify 78.5), while every 80+ application on record is a zero-interview outcome (Qonto 88, N26 85.5, DKB Code Factory 84.85, yttr AS 81, Kake 80). Sample is still small, but it is now four setup-runs consistent: treat a high score as a statement about paper overlap, not about screening odds, and invest in differentiation (referral, named contact, sharper opening) most heavily on exactly those 80+ banking/fintech roles.
+
+**Unresolved gates at submission, second instance.** Kaizen Gaming went out with the work location genuinely unresolved (recruiter listing said Norway, the employer's own requisition read as Thessaloniki, Greece hybrid) and was rejected at screening - the same pattern as The New York Times. Resolve location and eligibility with the recruiter before submitting rather than disclosing the open question in the cover letter.
+
+**US-tagged "remote" postings are an Eligibility FAIL by default.** Bluestorm Recruitment's "Permanent Remote" iOS role carried a United States location tag; the application portal refused the submission outright. Treat a US location tag on a remote posting as FAIL under the Eligibility Gate unless the posting explicitly welcomes non-US applicants.
+
+**Stack filter confirmed.** Bokio (React Native + TypeScript) was withdrawn before submission, and on 2026-09-23 the candidate made fullstack / React Native / cross-platform web roles a hard deal-breaker (see CLAUDE.md). Do not score them.
+
+**Update 2026-11-06 (`/setup` Path A re-run).** 55 applications submitted: 24 closed (23 rejected, 1 no response), 31 open, no offers. Resolved since the last pass, all with no interview: Amazon (67), CI&T (81.3), Mode Mobile (60), Proton (82), Tise (78), Wolt Senior (80.7), Wolt Staff (71), Zopa Bank (80.5), Propely (85), Vend App Developer (82.5), Norsk Tipping (67). Progress on an open application: Fartskriver (70) reached a live phone screen on 2026-10-14; the promised answer date passed with no reply after two follow-ups.
+
+| Fit score | Submitted | Closed | Reached any interview stage |
+|---|---|---|---|
+| 80+ | 18 | 12 | 0 |
+| 70-79 | 21 | 4 | 4 (Speechify, Out of the Box Systems, Plum Fintech, Fartskriver) |
+| 60-69 | 11 | 6 | 0 |
+| Under 60 | 5 | 2 | 0 |
+
+**The inverse pattern holds, but the evidence is thin.** 0 of 18 at 80+ against 4 of 21 at 70-79 could still arise by chance about 7% of the time, and Plum's stage was a chatbot, so it may not reflect a person choosing the candidate. Do not read this as "a lower score is better".
+
+**Unresolved gates may explain more than the score does.** At least 13 of the 22 no-interview outcomes had a location, eligibility or language flag on record at application: Amazon, CI&T, Kaizen Gaming, Mode Mobile, The New York Times, Norsk Tipping, Proton, Tise, Vend, Wolt Senior, Wolt Staff, yttr AS, Zopa Bank. The score does not capture these. Resolve location and permit flags before spending effort on an application, whatever its score, and treat a score as a statement about paper overlap rather than screening odds.
+
+**First specific feedback at screening.** Propely (85, rejected 2026-11-06) named the banking apps, introducing SwiftUI at Empiricus, and responsibility for architecture and releases as interesting, and offered to stay in touch. This shows those points are being read, not what the chosen candidates had instead.
 
 ## Weighting
 - Technical Skills: 30%

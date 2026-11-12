@@ -8,23 +8,23 @@ framework_version: 1.0.2
 
 Cover letters use a custom LaTeX document class (`cover.cls`) with Lato/Raleway fonts.
 
-**Output file:** `cover_letters/cover_<company>_<role>.tex`
+**Output file:** `cover_letters/CL_Lynneker_Souza_<role>_<company>.tex`
 **Compile with:** XeLaTeX (cover.cls requires fontspec)
 **Font directory:** `cover_letters/OpenFonts/fonts/`
 
 ### Compile command
 
 ```bash
-cd cover_letters && xelatex -interaction=nonstopmode cover_<company>_<role>.tex
+cd cover_letters && xelatex -interaction=nonstopmode CL_Lynneker_Souza_<role>_<company>.tex
 ```
 
-Expected output: `Output written on cover_<company>_<role>.pdf (1 page, ...)`. Any page count other than 1 is a failure that must be fixed before presenting to the user.
+Expected output: `Output written on CL_Lynneker_Souza_<role>_<company>.pdf (1 page, ...)`. Any page count other than 1 is a failure that must be fixed before presenting to the user.
 
 ## Compile-and-Inspect Loop (MANDATORY)
 
 After writing the cover letter and before presenting to the user, always compile and visually inspect the PDF. Iterate until the layout is clean:
 
-1. Run `xelatex -interaction=nonstopmode cover_<company>_<role>.tex`
+1. Run `xelatex -interaction=nonstopmode CL_Lynneker_Souza_<role>_<company>.tex`
 2. Confirm page count is exactly 1 and compile succeeded
 3. Read the PDF via the Read tool and visually check: signature fits at the bottom, no text cut off, bullet font matches body
 
@@ -127,9 +127,17 @@ The font wrapper is mandatory — if you just move `\begin{itemize}` outside `\l
 
 *[Extracted by `/setup` Path A from 4+ archived cover letters (DKB Code Factory, Qonto, Proton, Norsk Tipping) - a genuinely repeated pattern, not a one-off]*
 
-> "I am writing to apply for the [Role] at [Company]. Over eight years I have built native Swift applications for banking and fintech clients, most recently as a Senior iOS Consultant at CGI, where I implemented and integrated a Security Authentication SDK across a banking client's app suite."
+> "I am writing to apply for the [Role] at [Company]. Over eight years I have built native Swift applications for banking and fintech clients, most recently as a Senior Consultant at CGI, where I led the iOS integration of a third-party Security Authentication SDK across a banking client's app suite."
 
 Use this as the default opening-paragraph bridge for banking/fintech-adjacent roles: it states the role, then immediately anchors credibility with tenure + the most security/fintech-relevant recent achievement. Adjust the trailing clause to whichever achievement is most relevant to the specific posting when the role isn't banking-specific.
+
+### Forward-Looking Bullet Lead-In
+
+*[Extracted by `/setup` Path A from vend_app_developer_finn_travel; Propely uses a shorter form, "What I would bring:"]*
+
+> "As Travel's first app developer, I would focus on three things:"
+
+Use this for product companies where the posting describes a specific job to be done. The bullets then name the employer's task first and back it with one past example, rather than listing past achievements.
 
 ## Tailoring Guidelines
 

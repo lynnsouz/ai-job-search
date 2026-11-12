@@ -108,3 +108,16 @@ The cover letter is **not a CV repetition**. It should be forward-looking:
 - Default to the language of the job posting
 - Cover letters in the posting's language should feel natural, not translated
 - Slightly warmer, more personal tone may be acceptable in some languages
+
+## Patterns Observed in Past Applications
+
+*[Extracted by `/setup` Path A on 2026-09-23 from archived cover letters - observations, not new rules]*
+
+- **One honest-gap paragraph, stated plainly.** Recent letters (Mode Mobile, Fartskriver, Plum Fintech, Kaizen Gaming) name the single most material gap directly ("To be direct about the gap: my production experience is iOS, not Android") and bridge it with one concrete, profile-grounded precedent (e.g. leading SwiftUI/Combine adoption at Empiricus Research) rather than hedging or omitting it. Keep it to one short paragraph near the end, never apologetic.
+- **A logistics line in the closing paragraph.** Letters close with where the candidate lives, what office cadence is possible (e.g. "I live in Arendal and can be at your Oslo office three days a week"), and any work-authorization point the posting raises - so the recruiter does not have to ask.
+
+*[Added by `/setup` Path A on 2026-11-06 from archived cover letters - observations, not new rules]*
+
+- **An AI paragraph with an honest limit.** Propely, AlphaSense and Wolt Staff name GitHub Copilot at CGI (25% efficiency gain), then Claude Code outside client work, and Propely adds the limit plainly ("I have not yet shipped an AI feature inside a mobile app").
+- **The gap line is getting repetitive.** "To be direct about the gap(s)" now opens the honest-gap paragraph in many letters. Keep the plain statement but vary the wording, because a recruiter comparing letters or a reader of several will notice the formula.
+

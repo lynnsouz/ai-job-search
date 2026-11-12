@@ -78,6 +78,8 @@ Back in the main context, for each scored job:
 
 Sort by overall score (descending), urgency as tiebreaker.
 
+7. **Auto-eliminate Weak Fit and Poor Fit from what's shown.** Per the user's standing instruction, jobs scoring below 45 (Weak Fit 30-44, Poor Fit <30) are still scored and persisted in Step 4 exactly like any other job - this rule only changes what Step 5 displays, never what gets written to `seen_jobs.json` or how a score is computed. They never appear in the Shortlist or Below Threshold tables; they're folded into a single count in the Step 5 summary line instead (see Step 5). This keeps the scoring history and idempotency intact while decluttering what the user actually has to read.
+
 ---
 
 ## Step 4: Update State
@@ -99,7 +101,7 @@ Do not modify `job_search_tracker.csv` - that file records applications, and `/r
 ```
 ## Job Ranking - YYYY-MM-DD
 
-Ranked <N> new postings (<X> shortlisted, <Y> below threshold, <Z> expired/vetoed).
+Ranked <N> new postings (<X> shortlisted, <Y> below threshold, <Z> expired/vetoed, <W> Weak/Poor Fit auto-eliminated from view).
 Swept <S> previously ranked entries (<E> newly expired, <C> closing soon).
 
 ### Shortlist
@@ -128,6 +130,7 @@ Swept <S> previously ranked entries (<E> newly expired, <C> closing soon).
 
 Rules for the presentation:
 
+- **Weak Fit and Poor Fit jobs (score < 45) are never listed** in the Shortlist or Below Threshold tables - roll them into the `<W> Weak/Poor Fit auto-eliminated from view` count in the summary line and say nothing more about them. They are still scored and persisted in `seen_jobs.json` per Step 4 (so this is a display filter, not a scoring change) - if the user asks to see them anyway, or wants this behavior turned off, read them back from `seen_jobs.json` (`rank_verdict` in `["Weak Fit", "Poor Fit"]`) rather than re-scoring.
 - Every table (shortlist, below threshold, excluded) includes the posting URL as a clickable link - link to the entry's `url` field in `seen_jobs.json` (not the entry's key, which for some portals is a company+title composite rather than the URL), so this never requires an extra lookup. Never drop the link for brevity.
 - A shortlisted job with `language_gate: FLAG` gets a ⚠ marker next to its Title (same treatment as a location FLAG) and its `language_note` quoted in that job's "Why these ranked highest" writeup, so the language-level gap is visible without digging into the raw JSON.
 - Every claim traces to fetched posting text or the profile - no invented details.
