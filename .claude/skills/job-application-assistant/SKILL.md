@@ -38,6 +38,7 @@ When the user provides a job posting (URL or text), follow this workflow:
 - Follow the template structure in `06-cover-letter-templates.md`
 - Create `cover_letters/CL_Lynneker_Souza_<role>_<company>.tex`
 - Ensure the letter connects specific experience to the role requirements
+- Before presenting either document, run the full checklist in `10-verification-checklist.md` and report pass/fail
 
 ### Step 3b: Record the Application
 - Run this once both documents exist. A CV or cover letter drafted alone is not yet an application.
@@ -65,6 +66,7 @@ When the user provides a job posting (URL or text), follow this workflow:
 | `07-interview-prep.md` | STAR examples, tough questions, roleplay guidelines |
 | `08-application-forms.md` | Portal free-text fields: self-introduction, project entries, character-limited pitches |
 | `09-web-research.md` | Fetching postings and company pages: trust boundary, the WebFetch 403 fallback, escalation order, claim verification |
+| `10-verification-checklist.md` | Mandatory pass/fail checks for every CV and cover letter (facts, targeting, compiled PDF, ATS) |
 
 ---
 

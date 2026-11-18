@@ -277,6 +277,26 @@ As of 2026-09-15, 11 applications have reached a final outcome from an actually-
 
 **First specific feedback at screening.** Propely (85, rejected 2026-11-06) named the banking apps, introducing SwiftUI at Empiricus, and responsibility for architecture and releases as interesting, and offered to stay in touch. This shows those points are being read, not what the chosen candidates had instead.
 
+**Update 2026-11-18 (`/setup` Path A re-run).** 61 applications submitted: 55 closed (30 rejected, 25 no response), 6 open (Gard, Sowelo Consulting, Verity Group, Madiff, Magnify360 Solutions, BairesDev REF#307681), no offers. On 2026-11-10 the candidate closed every application quiet for more than 45 days as no_response; AlphaSense Senior Staff then sent a form rejection two days later, so a late answer after the cutoff can still arrive. Resolved since the last pass with a stage or a stated reason: Fartskriver (70, rejected after the phone screen), HumanIT (75.45, rejected the day it was sent), Grafana Labs (74, role filled), ElevenLabs (70.35, rejected at review), iFood (84.6, rejected at screening), CI&T Brasil (no score, rejected after an AI-run audio screen), Vend Travel (rejected at review), Propely (85, see above).
+
+| Fit score | Submitted | Closed | Reached any interview stage |
+|---|---|---|---|
+| 80+ | 18 | 18 | 0 |
+| 70-79 | 24 | 21 | 4 (Speechify, Out of the Box Systems, Plum Fintech, Fartskriver) |
+| 60-69 | 13 | 10 | 0 |
+| Under 60 | 5 | 5 | 0 |
+| No score | 1 | 1 | 1 (CI&T Brasil, AI audio screen) |
+
+**Location is now a stated reason, not only a suspicion.** Two employers named it in writing: Fartskriver ("located in Arendal and don't speak the language yet", after a screen where relocation was offered) and HumanIT (candidates must be based in, or relocate to, a specific location). At least four more of the new rejections had a location or eligibility flag open at submission: Grafana Labs (hiring countries excluded Norway), ElevenLabs (country list, third-party "no visa sponsorship" note), iFood (remote-from-Norway never confirmed) and CI&T Brasil (posting asked for people located in Brazil). Resolve location before applying, and expect a fast no when the posting's hiring countries exclude Norway.
+
+**The inverse score pattern is unchanged and still thin.** 0 of 18 at 80+ against 4 of 24 at 70-79 would arise by chance about 10% of the time, and many 80+ applications also carried location flags. Keep treating the score as paper overlap, not screening odds.
+
+**Two of the five "interview" stages were automated.** Plum Fintech's chatbot and CI&T's virtual assistant "Alex" ran those screens; the only human screens on record are Out of the Box Systems, Speechify and Fartskriver. Treat an AI screen as part of screening, not as interview progress.
+
+**Brazil-remote route: 0 for 3 so far** (CI&T AI Agents 81.3, CI&T Brasil, iFood 84.6). In at least two, working from Norway was not confirmed with the recruiter before applying (iFood's recruiter note was drafted but not sent). Too few to judge the route; confirm remote-from-abroad first.
+
+**Inaccurate permit wording in older applications.** CI&T's September letter said "visto de trabalho norueguês" and Plum's notes record a "Norwegian working visa". Letters since late October state the Family Ties permit as pending. If either employer re-engages, correct it.
+
 ## Weighting
 - Technical Skills: 30%
 - Experience Match: 25%

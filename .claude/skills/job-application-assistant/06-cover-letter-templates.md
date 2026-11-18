@@ -139,6 +139,14 @@ Use this as the default opening-paragraph bridge for banking/fintech-adjacent ro
 
 Use this for product companies where the posting describes a specific job to be done. The bullets then name the employer's task first and back it with one past example, rather than listing past achievements.
 
+### Opening for Development-Adjacent Roles
+
+*[Extracted by `/setup` Path A on 2026-11-18 from gard_technical_business_analyst]*
+
+> "For over eight years I have built and maintained applications for banks and financial companies, and much of that work has never ended at code: finding out why a system behaves the way it does, working with the supplier to resolve it, writing down what changed and taking it safely through release."
+
+Use this for application-support, business-analyst or similar non-developer roles: it reframes developer experience around investigation, supplier work, documentation and release, which are all grounded in the CGI/AktiaDuetto SDK work. Do not use it for iOS developer roles.
+
 ## Tailoring Guidelines
 
 ### Salutation

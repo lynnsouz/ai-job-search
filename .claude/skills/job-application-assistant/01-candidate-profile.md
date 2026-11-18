@@ -84,6 +84,7 @@ Brazil (remote)
 - Maintained 94% code coverage on developed features; 20+ code reviews per month; 48+ versions released to the App Store
   - Context (user, 2026-10-13): the team's delivery bar was >80% test coverage plus end-to-end Firebase metrics on each feature; QA also covered error cases with automated tests. Crash-free claim is based on logs showing 0% crashes on the cashback feature from release through later updates
   - Delivery approach (user-supplied, from the cashback STAR answer in 07-interview-prep.md; recorded here 2026-11-09): iOS was behind Android because of a developer shortage, so Lynneker split the work into two deliveries - first a native flow replacing the old webview points-redemption page, then fully automatic redemption - and instrumented the feature with Firebase and crash/usage tracking from launch
+  - Feature toggles (user, 2026-11-18): features shipped in the banking apps sat behind remote security toggles (kill switches) that could be turned off remotely if something went wrong; applies across the bank roles. This is feature flagging / remote configuration, not confirmed A/B experiments with variants - do not claim A/B testing from it
 
 ### iOS Mid-Senior App Developer - Empiricus Research (Mar 2021 - Jun 2022)
 Remote (São Paulo, Brazil)
@@ -141,6 +142,9 @@ Lago Norte, Brasília, Brazil
 ### Programming & Mobile
 - **Swift, SwiftUI, Objective-C** (Expert): iOS, macOS, SPM, CoreData, SwiftData, Clean Swift Architecture, MVVM, RxSwift/Combine, Swift Concurrency (async/await)
 - RESTful APIs, Postman, XCTest, UI Testing, Accessibility, Keychain, Animations
+- **UIKit** (production across C6 Bank, Santander, everis and earlier roles; added by `/setup` Path A 2026-11-18 from LinkedIn tech stacks - previously only named inside the cashback bullet)
+- Agile/Scrum teams (everis, Stefanini, BEPiD - from LinkedIn tech stacks)
+- Early-career tools: SpriteKit, SQLite, Storyboard (BEPiD / Apple Developer Academy), Sketch (Orbit Labs) - from LinkedIn; older, list only when a posting asks
 - TestFlight: used throughout entire career (stated by user 2026-11-06)
 - A/B testing: knows the concept, has never used it at work (stated by user 2026-11-06) - do not claim hands-on experience
 - Modular app architecture (confirmed by user 2026-11-06). A CocoaPods to SPM transition with faster builds through caching came up in the CI&T audio interview (2026-11-06, taken from the interviewer's summary of Lynneker's answer); project name and measured build times not recorded yet, so confirm before using in a CV or letter
@@ -159,7 +163,7 @@ Lago Norte, Brasília, Brazil
 - Git, Cocoapods, Carthage
 - AWS, Push Notification, CoreLocation, Auto Layout
 - HTML/CSS, PHP, WordPress
-- AI-assisted development tooling (GitHub Copilot at CGI/AktiaDuetto, 2025-2026; Claude Code used for this job-search workflow itself, not claimed as on-the-job professional use)
+- AI-assisted development tooling (GitHub Copilot at CGI/AktiaDuetto, 2025-2026; Claude Code used for this job-search workflow itself and, per the user on 2026-11-18, on independent projects of their own - project names not yet recorded; not claimed as on-the-job professional use)
 - Functional Programming
 
 ## Publications

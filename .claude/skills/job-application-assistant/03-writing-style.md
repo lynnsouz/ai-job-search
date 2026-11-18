@@ -121,3 +121,7 @@ The cover letter is **not a CV repetition**. It should be forward-looking:
 - **An AI paragraph with an honest limit.** Propely, AlphaSense and Wolt Staff name GitHub Copilot at CGI (25% efficiency gain), then Claude Code outside client work, and Propely adds the limit plainly ("I have not yet shipped an AI feature inside a mobile app").
 - **The gap line is getting repetitive.** "To be direct about the gap(s)" now opens the honest-gap paragraph in many letters. Keep the plain statement but vary the wording, because a recruiter comparing letters or a reader of several will notice the formula.
 
+*[Added by `/setup` Path A on 2026-11-18 from archived cover letters - observations, not new rules]*
+
+- **A standard work-permit sentence in the closing paragraph.** HumanIT, Sowelo, Vend Travel and Gard close with the same accurate wording: "My Family Ties residence permit, which gives the right to work, is pending, and if an offer came first I would apply for a skilled worker visa." Agency letters (HumanIT, Sowelo) add a direct question about how the client employs or hires someone based in Norway. Brazil-remote letters (iFood, written in Portuguese) replace it with Brazilian citizenship, working 100% remote from Arendal, and the time-zone overlap with Brasília.
+

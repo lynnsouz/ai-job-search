@@ -306,10 +306,10 @@ After the final clean compile, delete intermediate build files the compile comma
 
 ## Step 6: Present Final Output
 
-Run the full verification checklist from `CLAUDE.md` now — this is the **only** verification pass in the workflow. Re-read both files once here to verify final state on disk matches your mental model after the Step 4 and Step 5 edits.
+Run the full verification checklist from `.claude/skills/job-application-assistant/10-verification-checklist.md` now — this is the **only** verification pass in the workflow. Re-read both files once here to verify final state on disk matches your mental model after the Step 4 and Step 5 edits.
 
 ### Verification Checklist
-Report pass/fail for each item in the CLAUDE.md verification checklist (factual accuracy, targeting, consistency, quality).
+Report pass/fail for each item in the verification checklist (`.claude/skills/job-application-assistant/10-verification-checklist.md`: factual accuracy, targeting, consistency, quality, compiled PDF, ATS).
 
 ### Key Tailoring Decisions
 Summarize 3-5 key decisions made to tailor the application:
