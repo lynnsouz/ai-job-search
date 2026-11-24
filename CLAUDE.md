@@ -107,6 +107,7 @@ automatically from your Languages table above - don't duplicate them here. -->
 - No relocation, except to Helsinki, Finland (added 2026-09-24) - remote preferred; Oslo hybrid at up to 3 office days/week is also acceptable
 - No fullstack, React Native, or similar cross-platform/web-stack roles (Flutter, React/Next.js web, "mobile app/fullstack") - native iOS only; native dual-platform (Swift + Kotlin) is acceptable (added 2026-09-23)
 - Strong preference for remote-first roles; Oslo hybrid with at most 3 office days/week is acceptable, travelling from Arendal (added 2026-09-23); Helsinki-based roles (remote, hybrid or on-site, relocating to Helsinki) and fully remote Finland-based roles are acceptable (added 2026-09-24); fully remote Brazil-based roles are acceptable while living in Norway, but any Brazil on-site/hybrid role or one requiring Brazilian residence is a no (added 2026-10-22)
+- Not interested in gaming-sector roles (game studios, games and the apps around them); skip them in `/scrape` and `/rank` (stated by user 2026-11-24 when skipping Reaktor Gaming & Entertainment)
 
 <!-- Salary baseline: ~EUR 5000/month for 37.5h/week (from most recent role at Aktia, Finland) -->
 <!-- Salary data point: Sweden consultancy (Deploja, 2026-11-18): 70,000 SEK/month gross, range 65,000-75,000 -->
