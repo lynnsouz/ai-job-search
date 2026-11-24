@@ -37,6 +37,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 - **Status:** Job-seeking, currently unemployed - actively looking to start a new role as soon as possible
 - **Work Authorization:** **No current Norwegian work permit** - Family Ties (familiegjenforening) residence permit applied for, decision pending and expected soon; it will grant the right to work once approved (updated 2026-10-16; not a Norwegian citizen or permanent resident). If a job offer comes first, Lynneker plans to apply for a skilled worker visa, with the result expected in about 2-3 weeks (candidate's estimate, stated 2026-11-06). Until a permit is granted, never claim a current Norwegian work right in a CV, cover letter or form - say the permit is pending - and run the Eligibility Gate in `04-job-evaluation.md` for any Norway-based posting. No current Finnish right to work - would need employer sponsorship / a work-based Finnish residence permit (confirmed by user 2026-09-24); run the Eligibility Gate for Helsinki/Finland-based postings and flag any that require an existing Finnish work right or no-sponsorship
+- **Portfolio:** https://lynnsouz.github.io/PropertyAsset/ (Property Asset, independent iPhone/iPad/Mac app built solo in SwiftUI + SwiftData with some help from Claude; Supabase (Postgres) backend with a custom offline-first sync engine, no CloudKit, no real-time sync; website made with Claude Code; "coming soon to the App Store" as of 2026-11-20 - not released yet)
 - **LinkedIn headline:** "Experienced iOS Developer | Innovation Advocate"
 
 ### Education
@@ -81,6 +82,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - Best Pitch and Product (Go'oat) - Startup Sauna Dawn Batch, Aaltoes/Aalto University, Finland (2025)
 
 ### Behavioral Profile
+- **Formal assessment (Fairsight, 2026-04-20):** fast learner, "up to speed in a new role quickly and with limited support"; problem-solving style *Flexible & Deliberate / Double-checks / Thorough*; high conscientiousness and emotional stability. Details, approved wording and what never to cite: `.claude/skills/job-application-assistant/02-behavioral-profile.md`. Use at least one assessment-backed trait (with evidence) in every cover letter
 <!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
 - **Mentoring / code-review leadership** - Recurring theme across reference letters (Empiricus, C6 Bank): proactively raises codebase quality, helps onboard new teammates smoothly
 - **Accessibility-minded, user-centric design** - Specifically recognized for adaptive, inclusive UI work (font-size accessibility on C6 Bank's balance cards)
@@ -107,6 +109,7 @@ automatically from your Languages table above - don't duplicate them here. -->
 - Strong preference for remote-first roles; Oslo hybrid with at most 3 office days/week is acceptable, travelling from Arendal (added 2026-09-23); Helsinki-based roles (remote, hybrid or on-site, relocating to Helsinki) and fully remote Finland-based roles are acceptable (added 2026-09-24); fully remote Brazil-based roles are acceptable while living in Norway, but any Brazil on-site/hybrid role or one requiring Brazilian residence is a no (added 2026-10-22)
 
 <!-- Salary baseline: ~EUR 5000/month for 37.5h/week (from most recent role at Aktia, Finland) -->
+<!-- Salary data point: Sweden consultancy (Deploja, 2026-11-18): 70,000 SEK/month gross, range 65,000-75,000 -->
 
 ## Workflow for New Job Applications
 1. User provides a job posting (URL or text)

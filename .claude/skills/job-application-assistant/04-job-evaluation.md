@@ -297,6 +297,32 @@ As of 2026-09-15, 11 applications have reached a final outcome from an actually-
 
 **Inaccurate permit wording in older applications.** CI&T's September letter said "visto de trabalho norueguês" and Plum's notes record a "Norwegian working visa". Letters since late October state the Family Ties permit as pending. If either employer re-engages, correct it.
 
+**Update 2026-11-19 (`/setup` Path A re-run).** 64 applications submitted: 56 closed (31 rejected, 25 no response), 8 open (Sowelo Consulting, Verity Group, Madiff, Magnify360 Solutions, BairesDev REF#307681, Deploja 67, Opinov8 68, wynwood tech 74), no offers. Resolved since the last pass: Gard (Technical Business Analyst, fit 60, rejected 2026-11-18 by standard email ten days after applying, no interview, no reason given).
+
+| Fit score | Submitted | Closed | Reached any interview stage |
+|---|---|---|---|
+| 80+ | 18 | 18 | 0 |
+| 70-79 | 25 | 21 | 4 (Speechify, Out of the Box Systems, Plum Fintech, Fartskriver) |
+| 60-69 | 15 | 11 | 0 |
+| Under 60 | 5 | 5 | 0 |
+| No score | 1 | 1 | 1 (CI&T Brasil, AI audio screen) |
+
+**A local role was rejected too.** Gard was on-site in Arendal, so location cannot explain it. What remains is the skills gap against the posting (M-Files, insurance-system admin, daily SQL, reporting) and the pending work permit, which was stated in the portal message. One data point only: do not conclude the permit is the screening factor, but keep stating it accurately and watch whether local rejections repeat.
+
+**Consultancy/broker route, tracked separately from now on.** Deploja (Sweden, assignment-based consultant network), Opinov8 (remote consultancy), wynwood tech (freelance broker for an unnamed European agency), Sowelo and the closed HumanIT application all place the candidate with a client rather than hire directly. HumanIT rejected because candidates had to be based in a specific location. Each of the open ones asks how they employ or contract someone based in Norway; record their answers in `outcome.md`, since that answer decides whether the route is viable.
+
+**Update 2026-11-24 (`/setup` Path A re-run).** 70 applications submitted: 56 closed (31 rejected, 25 no response), 14 open, no offers. No application resolved since the last pass. Submitted since 2026-11-19: act digital (76), Ajaib (80), Intecfy (68.75), AfterQuery (58), ŌURA Tech Lead Manager (66) and Wolt Senior Mobile Engineer, iOS - New Verticals EMEA (77.85, a second application to the group that rejected req 8200951). TradingView (73.4) was withdrawn before submission once the role proved to be Limassol-based; no fit signal.
+
+| Fit score | Submitted | Closed | Reached any interview stage |
+|---|---|---|---|
+| 80+ | 19 | 18 | 0 |
+| 70-79 | 27 | 21 | 4 (Speechify, Out of the Box Systems, Plum Fintech, Fartskriver) |
+| 60-69 | 17 | 11 | 0 |
+| Under 60 | 6 | 5 | 0 |
+| No score | 1 | 1 | 1 (CI&T Brasil, AI audio screen) |
+
+**Open gates at submission are still the norm, despite the advice above.** Five of the six new submissions went out with a location or eligibility question unresolved: act digital (Norway-based staffing not confirmed with the recruiter), Ajaib (whether they hire for the role from Norway), Intecfy (freelancing from Norway blocked until the Family Ties permit is granted), AfterQuery (how they contract experts in Norway) and ŌURA (Finnish permit support unverified, plus an unmet "1+ years as a tech lead" requirement). Only Wolt went out with location and eligibility settled (Helsinki relocation, no sponsorship knockout on the form). When these resolve, compare how fast the five flagged applications close against Wolt: it is the cleanest test so far of whether open gates, rather than the score, drive the fast rejections.
+
 ## Weighting
 - Technical Skills: 30%
 - Experience Match: 25%

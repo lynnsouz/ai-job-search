@@ -22,6 +22,7 @@ After creating or updating a CV or cover letter, re-read the generated file and 
 ### Quality
 - [ ] No LaTeX syntax errors (balanced braces, correct commands)
 - [ ] No spelling or grammar errors
+- [ ] Cover letter personal-fit paragraph uses at least one Fairsight-backed trait paired with a concrete example; any quoted assessment wording matches `02-behavioral-profile.md` (no invented scores/percentiles, no Agreeableness result)
 - [ ] Agentic coding / AI tooling references name the tool actually used in that role (GitHub Copilot for CGI/AktiaDuetto; Claude Code only where genuinely used on the job - see the **Important** note in CLAUDE.md)
 - [ ] Cover letter is addressed to the correct person (or "Dear Hiring Manager" if unknown)
 - [ ] Cover letter fits approximately one page

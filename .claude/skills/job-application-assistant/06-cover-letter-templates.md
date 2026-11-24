@@ -99,7 +99,9 @@ The font wrapper is mandatory — if you just move `\begin{itemize}` outside `\l
 
 \lettercontent{[Connection to company - why this role, why this company specifically]}
 
-\lettercontent{[Personal fit paragraph - behavioral strengths, team contribution, 2-3 sentences]}
+% Personal fit: include at least one Fairsight-backed trait (fast learner / calm under
+% pressure / thorough, double-checks) paired with a real example - see 02-behavioral-profile.md
+\lettercontent{[Personal fit paragraph - behavioral strengths (assessment-backed where relevant), team contribution, 2-3 sentences]}
 
 \lettercontent{I look forward to hearing from you.}
 
@@ -196,6 +198,35 @@ Escape these wherever they appear in body text:
 - [ ] Language matches the job posting language
 - [ ] Salutation is appropriate (named person if possible)
 - [ ] Headline is engaging and specific, not generic
+
+## Email-Only Application (Brokers / "send your CV to" postings)
+
+*[Extracted by `/setup` Path A 2026-11-19 from wynwood_tech_llc_ios_engineers/email_draft.md]*
+
+When a posting asks for an email with a CV (and sometimes a self-assessment) instead of a cover letter, write a short plain-text email, not a cover.cls PDF:
+
+```
+Subject: [Role], [remote/contract terms] ([3-4 key technologies from the posting]) - Lynneker Souza
+Attachment: [the CV file actually attached]
+
+Dear [Team name],
+
+[1 sentence: which role/contract.] [1-2 sentences: years of native iOS, the 2-3 most relevant clients with scale figures, most recent placement.] [Time zone / location line if the posting names one.]
+
+Self-assessment (0-10):            <- only if the posting asks for it
+- [Area exactly as the posting names it]: [score] ([short honest note on any score below 7, or the evidence for a high one])
+- ...
+
+Earliest start: [answer]. [Standard permit sentence from 03-writing-style.md.] [Question about how they contract with someone based in Norway.]
+
+My CV is attached. I look forward to hearing from you.
+
+Kind regards,
+Lynneker Souza
+[phone] / [email] / [LinkedIn URL]
+```
+
+Rules: score honestly (a low score with a reason, such as "2 (no direct experience; my domain is banking and payments)", reads better than an inflated one); keep the scores consistent with the attached CV; the verification checklist still applies to the attached CV.
 
 ## Submission Guidelines (Best Practice)
 - Submit only the documents the employer requests

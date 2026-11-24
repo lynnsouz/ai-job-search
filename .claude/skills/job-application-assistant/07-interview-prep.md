@@ -143,6 +143,26 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 - Action:
 - Result:
 
+### Features Behind Remote Kill Switches and Phased Releases (Safe Releases / Experimentation)
+**Source:** 01-candidate-profile.md - C6 Bank (act digital); Deploja application form, 2026-11-18
+**What happened:** Banking features shipped behind remote toggles that could switch them off in production, and the cashback rollout was split into two deliveries (native redemption flow first, then automatic redemption), measured with Firebase.
+**Why it matters:** Answers "how do you release safely?", "experience with experimentation / A/B testing?" (state honestly: toggles and phased releases, not A/B tests with variants), "how do you handle a risky launch?"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### A Discarded Experiment or Feature (Learning from Work That Was Dropped)
+**Source:** Gap found in the Deploja application form, 2026-11-18 ("you see a discarded experiment as a lesson learned") - no story on record yet
+**What happened:** [To be supplied by the candidate: a feature, prototype or approach that was built and then dropped or reversed]
+**Why it matters:** Answers "tell me about a failure", "a time your work was thrown away", "how do you react when priorities change?"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
 ## Common Tough Questions
 
 ### "Why did you leave [previous company]?"
@@ -155,7 +175,13 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 > [PREPARE YOUR ANSWER - show ambition aligned with the role's growth path]
 
 ### "What's your biggest weakness?"
-> [PREPARE YOUR ANSWER - genuine weakness with concrete mitigation strategy]
+> *[Draft from Fairsight job-personality profile 2026-04-20 - review and say it in your own words]* "A personality assessment I took this year confirmed something I had already noticed: I'm comfortable with technical disagreement, but conversations that are mostly emotional, like a teammate who is stressed or unhappy, don't come naturally to me, and I can lean towards my own approach over the group's. Since I want to grow into technical leadership, I work on it deliberately: I ask how people are doing before going into the technical topic, I make myself ask for the team's view before proposing mine, and at Arctic15 I coordinated 100+ volunteers, which was largely about keeping people motivated, not about code."
+
+### "How do you approach a new or complex problem?" / "How do you learn new things?"
+> *[Draft from Fairsight cognitive test 2026-04-20]* "I commit to an approach quickly instead of exploring ten options, but I double-check before I call it done. My Fairsight assessment labels that style Flexible & Deliberate, Double-checks and Thorough, and said I get up to speed in a new role quickly with limited support. Example: the Security Authentication SDK at CGI, a vendor SDK I hadn't used before. I mapped where it behaved differently from the old one, then verified the flow felt identical to users." Back it up with the IBM Watson project at UCB or the SwiftUI/Combine adoption at Empiricus.
+
+### "How do you handle pressure?"
+> Lead with the PIX STAR example. Optional backing: "My Fairsight profile put me as calm and in control in stressful situations, and PIX under Central Bank deadlines is where I saw it in practice."
 
 ### "Why this company specifically?"
 > Customize per company. Must reference: specific projects, company values, market position, or team structure. Never give a generic answer.

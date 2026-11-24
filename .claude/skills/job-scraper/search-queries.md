@@ -34,6 +34,8 @@ Queries are grouped by priority. Write **each category in every language from yo
 
 **Excluded role types (hard filter, added 2026-09-23):** fullstack developer, React Native, Flutter, React/Next.js web and similar cross-platform/web-stack roles - never present them, even as Low. Native dual-platform roles (Swift + Kotlin) are fine.
 
+**Excluded source: jobleads.com (hard filter, added 2026-11-23):** jobleads asks the candidate to pay when applying. Never present a jobleads.com URL (freehire-search returns many, often as company "Mobile Career" with a placeholder location like "Time, Rogaland"). For a promising jobleads hit, look for the same posting on the employer's own careers site/ATS (Lever, Greenhouse, Ashby, Workday...) or another free board, and present and store that URL instead. If no original is found, drop it.
+
 ### Priority 1: iOS / Mobile Engineering (Mid-Senior / Senior)
 
 These match your strongest and most desired career direction.

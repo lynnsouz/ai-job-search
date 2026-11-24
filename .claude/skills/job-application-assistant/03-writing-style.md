@@ -23,6 +23,16 @@ framework_version: 1.2.0
 - **First person, active voice.** "I built" not "a system was developed by the candidate."
 - **Demonstrate, don't state.** Instead of "I am a team player", write a specific example of teamwork and its outcome.
 
+## Voice Anchored in the Fairsight Assessment (added 2026-11-19)
+
+The letters should sound like the person the Fairsight results describe (see `02-behavioral-profile.md`): calm, deliberate, thorough, ambitious, direct.
+- **Calm and measured, not hyped.** High emotional stability + balanced extraversion: no exclamation marks, no "thrilled", "excited beyond words", "dream job". Confidence comes from facts stated plainly.
+- **Show the thinking, then the result.** The deliberate/double-checks style should come through in how achievements are told: "I mapped where the new SDK behaved differently, then made the flow feel identical to users" beats "I quickly integrated the SDK." Where it fits, include one sentence on *how* he approaches a problem (understand it first, commit to one approach, verify before shipping).
+- **Precise, verifiable claims.** Thoroughness means no inflated numbers and no vague superlatives. Each claim is one he could defend line by line.
+- **Ambition stated forward.** Conscientiousness (seeks advancement, sets ambitious goals): the closing or motivation paragraph can name the growth direction (senior ownership, technical leadership) plainly.
+- **Learning speed as a forward promise.** For roles with gaps (new domain, Android, a new stack), use the assessment-backed learning claim with a precedent, e.g. "Fairsight described me as able to get up to speed in a new role quickly and with limited support; I did that when..." This strengthens the honest-gap paragraph. Use the assessment name in at most one sentence per letter.
+- **Balance the low-agreeableness signal in leadership letters.** For lead/EM roles, include one concrete people example (onboarding new coders, training volunteers, coordinating 100+ volunteers at Arctic15) so the letter does not read as purely individual delivery.
+
 ## Application Headline (Best Practice)
 
 The subject line / headline of the application should be engaging and specific, not generic.
@@ -125,3 +135,13 @@ The cover letter is **not a CV repetition**. It should be forward-looking:
 
 - **A standard work-permit sentence in the closing paragraph.** HumanIT, Sowelo, Vend Travel and Gard close with the same accurate wording: "My Family Ties residence permit, which gives the right to work, is pending, and if an offer came first I would apply for a skilled worker visa." Agency letters (HumanIT, Sowelo) add a direct question about how the client employs or hires someone based in Norway. Brazil-remote letters (iFood, written in Portuguese) replace it with Brazilian citizenship, working 100% remote from Arendal, and the time-zone overlap with Brasília.
 
+
+*[Added by `/setup` Path A on 2026-11-19 from archived cover letters - observations, not new rules]*
+
+- **Consultant-inside-client-teams framing for consultancies and brokers.** Deploja, Opinov8 and the wynwood tech email open with "most of it as a consultant inside client teams" (C6 Bank, Santander, Aktia), and Deploja and Opinov8 introduce the bullets with "What I would bring to a [company] client team" / "On an [company] client project, I would focus on three things". Use this framing when the employer places people with clients.
+- **Gap paragraph wording now varies, as intended.** Deploja groups several partial matches into one plain paragraph ("Three of your requirements are partial matches. ..."), and Opinov8 names a single gap directly ("Kotlin Multiplatform itself is new to me"). Neither is apologetic, and both end with an adjacent precedent or a learning plan. Keep varying the wording.
+
+*[Added by `/setup` Path A on 2026-11-24 from archived cover letters - observations, not new rules]*
+
+- **The "how do you hire from Norway?" question has spread to direct employers.** AfterQuery ("Could you tell me how AfterQuery contracts with experts based in Norway?"), Ajaib ("whether Ajaib hires for this role from Norway, as an employee or as a contractor, and what overlap hours the team expects") and ŌURA (confirm early that they can support a Finnish permit) close with it, not only the agency letters. It keeps the letter honest, but asking in the letter is not the same as getting the answer before applying: the calibration in `04-job-evaluation.md` still favours resolving it with a recruiter first.
+- **A standard logistics line for Helsinki roles.** ŌURA and Wolt (New Verticals EMEA) close with the same facts: lived in Finland 2024-2026 (ŌURA) / until this summer (Wolt), now living in Arendal, would relocate to Helsinki, and would need a work-based Finnish residence permit.
